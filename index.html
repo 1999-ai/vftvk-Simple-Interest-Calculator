@@ -1,5 +1,6 @@
 <html>
     <head>
+    <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
@@ -9,16 +10,16 @@
             <table  class="mytable" cellspacing="15px">
                 <tr>
                     <td class="info"><label>Amount</label></td>
-                    <td class="info"><input type="text" size = "10px" id="principal"></td>
+                    <td class="info"><div><input type="text" size = "10px" id="principal"></div></td>
                 </tr>
                 <tr>
                     <td class="info"><label>Interest Rate</label></td>
-                    <td class="info"><input type="range" id="rate" value="0.0" min="0.0" max="20.0" step="0.1" oninput="this.nextElementSibling.value = this.value">
-                        <output type="text">0.0</output><span>%</span></td>
+                    <td class="info"><div></div><input type="range"  id="rate" value="10.50" min="1.0" max="20.0" step="0.1" oninput="this.nextElementSibling.value = this.value;"></div>
+                        <output type="text">10.50</output><span>%</span></td>
                 </tr>            
                 <tr>
                     <td class="info"><label>No. of Years</label></td>
-                    <td class="info"><input type="text" list="typelist" id="years" size="1px"></td>
+                    <td class="info"><div></div><input type="text" placeholder="1" list="typelist" id="years" size="1px"></div></td>
                 </tr>
                 <tr><td ><button onclick="compute()">Compute Interest</button></td></tr>
             </table>
