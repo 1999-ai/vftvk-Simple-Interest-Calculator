@@ -1,4 +1,33 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:white;}
+h1{
+    position:relative;
+    top: 30px;
+    left: 20px;
+    color:grey;
+}
+.mytable{
+    position:relative;
+    left: 80px;
+    top: 25px;
+    border-collapse: separate;
+    border-spacing:8px;
+}
+.info{
+    font: bold;
+    text-align:left;
+}
+return{
+    background-color:yellow;
+}
+suggestion{
+    position : relative;
+    left: 87px;
+    top: 27px;
+}
+copyright{
+    font: bold;
+    position : relative;
+    top:40px;
+    left:20px;
 
-
+}

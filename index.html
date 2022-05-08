@@ -5,12 +5,47 @@
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <info>
+            <table  class="mytable" cellspacing="15px">
+                <tr>
+                    <td class="info"><label>Amount</label></td>
+                    <td class="info"><input type="text" size = "10px" id="principal"></td>
+                </tr>
+                <tr>
+                    <td class="info"><label>Interest Rate</label></td>
+                    <td class="info"><input type="range" id="rate" value="0.0" min="0.0" max="20.0" step="0.1" oninput="this.nextElementSibling.value = this.value">
+                        <output type="text">0.0</output><span>%</span></td>
+                </tr>            
+                <tr>
+                    <td class="info"><label>No. of Years</label></td>
+                    <td class="info"><input type="text" list="typelist" id="years" size="1px"></td>
+                </tr>
+                <tr><td ><button onclick="compute()">Compute Interest</button></td></tr>
+            </table>
+            <suggestion id = "result" name="result"></suggestion><br>
+        </info>
+        <copyright>&copy; Everyone Can Get Rich</copyright>
+        <datalist id="typelist">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>                
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+        </datalist>
     </body>
 </html>
